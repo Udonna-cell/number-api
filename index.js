@@ -10,12 +10,12 @@ const dotenv = require("dotenv");
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
-  MYSQL_URL: "mysql://root:b96RjdxJC8Wi9aopnwhw@containers-us-west-51.railway.app:7134/railway",
-MYSQLDATABASE: "railway",
-MYSQLHOST: "containers-us-west-51.railway.app",
-MYSQLPASSWORD: "b96RjdxJC8Wi9aopnwhw",
-MYSQLPORT: 7134,
-MYSQLUSER: "root"
+  //MYSQL_URL: "mysql://root:b96RjdxJC8Wi9aopnwhw@containers-us-west-51.railway.app:7134/railway",
+//MYSQLDATABASE: "railway",
+host: "containers-us-west-51.railway.app",
+//MYSQLPORT: 7134,
+user: "root",
+password: "b96RjdxJC8Wi9aopnwhw"
 });
 
 con.connect(function(err) {
